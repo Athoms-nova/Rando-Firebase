@@ -1,0 +1,28 @@
+
+.element-page{
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    background-image: url("../../Fond/montagne.jpg");
+    background-size: cover;
+    .title-page{
+        font-size: 36px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .liste-rando{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: auto;
+        min-height: 530px;
+    }
+
+    .liste-page{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}

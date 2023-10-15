@@ -1,0 +1,87 @@
+.modale-card {
+    border: solid;
+  
+    .modal-header{
+      .modal-title{
+        width: 90%;
+        text-align: center;
+      }
+    }
+  
+    .carousel-indicators{
+      background-color: rgba(0, 0, 0, 0.40);
+      border-radius: 20px;
+    }
+  
+    .carousel-control-prev, .carousel-control-next{
+      background-color: black;
+      width: 40px;
+    }
+  
+    .modal-dialog{
+      display: flex;
+      justify-content: center;
+      max-width: 1200px;
+      .modal-content{
+        width: 1000px;
+      }
+    }
+  
+    .image-part{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .separation{
+        border: solid 1px;
+        height: 200px;
+      }
+    }
+  
+    .image-carte {
+      border-radius: 10px;
+      width: 350px;
+      height: 200px;
+      overflow: hidden;
+      margin: 0 10px 0 10px;
+      img{
+        width: 380px;
+      }
+    }
+  
+    .image-carousel {
+      width: 230px;
+      height: 180px;
+      margin: 0 10px 0 10px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+  
+    .carousel-inner{
+      max-width: 500px;
+    }
+  
+    .info-carousel{
+      margin-top: 20px;
+      border: solid;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      .liste-info{
+        display: flex;
+        justify-content: space-around;
+        font-weight: bold;
+        border-bottom: solid;
+      }
+    }
+
+    .carousel-simple{
+      .carousel-control-prev, .carousel-control-next{
+        background-color: rgba(0, 0, 0, 0.70);
+        width: 50px;
+      }
+      .image-carousel{
+        width: 250px;
+      }
+    }
+  }
+  

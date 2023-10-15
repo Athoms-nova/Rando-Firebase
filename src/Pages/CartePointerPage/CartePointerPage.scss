@@ -1,0 +1,92 @@
+.carte-pointer-page {
+  min-height: 100vh;
+  background-image: url("../../Fond/montagne.jpg");
+  padding-top: 150px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+
+  .leaflet-liste-lieu {
+    display: flex;
+    max-width: 1400px;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    align-items: center;
+    padding: 20px;
+    .leaflet-container {
+      z-index: 0;
+      width: 600px;
+      min-height: 600px;
+      border-radius: 20px;
+    }
+  }
+
+  .select-liste-lieu {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.25);
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-right: 10px;
+    .liste-lieu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      min-height: 450px;
+    }
+  }
+
+  .select-ville {
+    width: 300px;
+    text-align: center;
+  }
+
+  .liste-page {
+    margin-top: 20px;
+  }
+
+  .liste-lieu {
+    .card-element {
+      width: 230px;
+      height: 200px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .carte-pointer-page {
+    .leaflet-liste-lieu{
+      flex-direction: column;
+
+      .select-liste-lieu{
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 750px) {
+  .carte-pointer-page {
+    .leaflet-liste-lieu{
+      .carte-liflet{
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 618px) {
+  .carte-pointer-page {
+    .leaflet-liste-lieu{
+      .liste-lieu {
+        min-height: 236px;
+      }
+    }
+  }
+}

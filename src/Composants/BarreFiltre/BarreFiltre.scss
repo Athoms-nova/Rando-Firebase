@@ -1,0 +1,130 @@
+.barre-filtre {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  .filtre-normal {
+    width: 100%;
+    margin: auto;
+    background-color: rgba(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    form,
+    .form-mobile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      .form-floating,
+      .select-checkbox,
+      .form-floating,
+      button {
+        height: 58px;
+      }
+
+      .item {
+        margin: 0 20px 0 20px;
+      }
+
+      .form-select {
+        width: 150px;
+      }
+
+      button {
+        width: 120px;
+      }
+
+      label {
+        font-size: 18px;
+        font-weight: bold;
+        color: rgb(26, 26, 26);
+      }
+
+      .select-checkbox {
+        .dropdown-item {
+          display: flex;
+          input {
+            margin-right: 15px;
+            z-index: 2;
+          }
+        }
+
+        button {
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .filtre-mobile {
+    display: block;
+    .accordion-body {
+      .form-mobile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        button {
+          height: 58px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .barre-filtre {
+    margin: auto;
+
+    .filtre-normal{
+      display: none;
+    }
+
+    .filtre-mobile {
+      display: block;
+      .accordion-body {
+        .form-mobile {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+          button {
+            height: 58px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .barre-filtre {
+    margin: auto;
+    .filtre-normal {
+      display: none;
+    }
+    .filtre-mobile {
+      .accordion-body {
+        .form-mobile {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          max-width: 400px;
+          margin: auto;
+          .item,
+          button {
+            margin: 5px 0 5px 0;
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+}

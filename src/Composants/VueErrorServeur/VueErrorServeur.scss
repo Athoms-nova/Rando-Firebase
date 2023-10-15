@@ -1,0 +1,23 @@
+.error-serveur {
+  border: solid;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../Fond/montagne.jpg");
+  text-align: center;
+
+  h1 {
+    border: solid 4px rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 30px 40px 30px 40px;
+    border-radius: 20px;
+    background: linear-gradient(
+      to bottom,
+      rgb(255, 0, 0) 0%,
+      rgba(255, 0, 0, 0.45) 30%,
+      rgba(255, 0, 0, 0.45) 70%,
+      rgb(255, 0, 0) 100%
+    );
+  }
+}
